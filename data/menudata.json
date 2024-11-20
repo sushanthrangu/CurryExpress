@@ -1,0 +1,140 @@
+[{
+  "_id": {
+    "$oid": "615db1bd0a1e8e4336d2efb9"
+  },
+  "id": "0001",
+  "type": "veg",
+  "price": 14,
+  "name": "Paneer Tikka Masala",
+  "image": "https://greedyeats.com/wp-content/uploads/2023/08/Paneer-Tikka-Masala-1.jpg",
+  "description": "This is popular indian curry flavoured with marinated tikka sauce and paneer         ",
+  "ingredients": [
+    "Onions and bell pepper",
+    "tikka sauce",
+    "panneer",
+    "oil"
+  ],
+  "topping": [
+    "Paneer",
+    "cream",
+    "cherry tomato",
+    "Capsicum",
+    "Red peprika"
+  ]
+},
+{
+  "_id": {
+    "$oid": "615db1bd0a1e8e4336d2efba"
+  },
+  "id": "0002",
+  "type": "veg",
+  "price": 12,
+  "name": "Aloo Gobi",
+  "image": "https://clubfoody.com/wp-content/uploads/2023/08/Aloo-Gobi-13_Fotor.jpg",
+  "description": "A classic Indian curry made with potatoes and cauliflower, seasoned with spices and herbs.",
+  "ingredients": [
+    "Potatoes",
+    "Cauliflower",
+    "Tomatoes",
+    "Turmeric",
+    "Coriander"
+  ],
+  "topping": [
+    "Cream",
+    "Cilantro",
+    "Kasuri methi",
+    "Butter drizzle"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672fedb1ff53757596d67cd6"
+  },
+  "type": "non-veg",
+  "price": 18,
+  "name": "Butter Chicken",
+  "image": "https://www.mysavoryadventures.com/wp-content/uploads/2023/04/restaurant-style-butter-chicken.jpg",
+  "description": "A creamy, rich curry made with grilled chicken simmered in a buttery tomato sauce.",
+  "ingredients": [
+    "Chicken",
+    "Butter",
+    "Tomato puree",
+    "Cream",
+    "Ginger garlic paste"
+  ],
+  "topping": [
+    "Cream",
+    "Cilantro",
+    "Kasuri methi",
+    "Butter drizzle"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672fee54ff53757596d67cd7"
+  },
+  "type": "veg",
+  "price": 13,
+  "name": "Chana Masala",
+  "image": "https://www.cookwithmanali.com/wp-content/uploads/2023/04/Punjabi-Chole-Masala-500x375.jpg",
+  "description": "A hearty chickpea curry cooked with onions, tomatoes, and a blend of spices.",
+  "ingredients": [
+    "Chickpeas",
+    "Onions",
+    "Tomatoes",
+    "Garlic",
+    "Spices"
+  ],
+  "topping": [
+    "Chopped onions",
+    "Cilantro",
+    "Lemon wedges",
+    "Green chili"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672fee66ff53757596d67cd8"
+  },
+  "type": "non-veg",
+  "price": 16,
+  "name": "Lamb Rogan Josh",
+  "image": "https://glebekitchen.com/wp-content/uploads/2017/04/chickentikkamasalafront-500x500.jpg",
+  "description": "A flavorful lamb curry slow-cooked with yogurt, onions, and traditional Kashmiri spices.",
+  "ingredients": [
+    "Lamb",
+    "Yogurt",
+    "Onions",
+    "Garlic",
+    "Kashmiri red chili"
+  ],
+  "topping": [
+    "Coriander",
+    "Green chili",
+    "Lemon wedges",
+    "Ginger juliennes"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672fee75ff53757596d67cd9"
+  },
+  "type": "veg",
+  "price": 11,
+  "name": "Baingan Bharta",
+  "image": "https://www.kuchpakrahahai.in/wp-content/uploads/2016/05/Baingan-Bharta-Recipe.jpg",
+  "description": "A smoky, spiced mashed eggplant curry made with onions, tomatoes, and herbs.",
+  "ingredients": [
+    "Eggplant",
+    "Onions",
+    "Tomatoes",
+    "Garlic",
+    "Spices"
+  ],
+  "topping": [
+    "Fresh cilantro",
+    "Green chili",
+    "Ghee drizzle",
+    "Cumin seeds"
+  ]
+}]

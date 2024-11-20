@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "67006a7ccaf889c851f725d4"
+  },
+  "mob": "123456789",
+  "name": "rohan",
+  "email": "rohan@gmail.com",
+  "password": "rohan@123"
+},
+{
+  "_id": {
+    "$oid": "67300cd9acf7544edbf6f702"
+  },
+  "mob": "12345",
+  "name": "abc",
+  "email": "abc@gmail.com",
+  "password": "abc"
+},
+{
+  "_id": {
+    "$oid": "6734e2ebacf7544edbf6f703"
+  },
+  "mob": "12345",
+  "name": "zoro",
+  "email": "zoro@gmail.com",
+  "password": "zoro@123"
+},
+{
+  "_id": {
+    "$oid": "6734e343acf7544edbf6f704"
+  },
+  "mob": "12345",
+  "name": "sanji",
+  "email": "sanji@gmail.com",
+  "password": "sanji@123"
+}]
