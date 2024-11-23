@@ -18,7 +18,7 @@ func UserRoute(app *fiber.App) {
 	// Fetch all users
 	app.Get("/getall", controllers.GetAllUsers)
 
-	// Fetch the pizza menu
+	// Fetch the menu
 	app.Get("/getmenu", controllers.GetMenu)
 
 	// Add an item to the cart
@@ -39,6 +39,6 @@ func UserRoute(app *fiber.App) {
 	// Delete from cart
 	app.Post("/deletefromcart", controllers.DeleteFromCart)
 
-	// Build a custom pizza
+	// Build a custom
 	app.Post("/build", controllers.BuildPizza)
 }

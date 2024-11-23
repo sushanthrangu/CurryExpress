@@ -6,8 +6,9 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../store/userSlice";
-
+import { GoogleLogin } from "@react-oauth/google";
 import { addMenuItems } from "../store/menuSlice";
+import { jwtDecode } from "jwt-decode";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -142,7 +143,7 @@ const Login = () => {
       <div className="w-[50%]">
         <form
           onSubmit={(e) => e.preventDefault()}
-          className="mx-[9%] my-[9%] absolute flex flex-col p-12 py-14 w-[30%] shadow-2xl rounded-2xl "
+          className="mx-[9%] my-[8%] absolute flex flex-col p-12 w-[30%] shadow-2xl rounded-2xl "
         >
           <h1 className="text-3xl font-bold mb-8 text-center font-serif font-bold">
             Login
@@ -154,7 +155,6 @@ const Login = () => {
             placeholder="Username"
             onChange={(e) => setUsername(e.target.value)}
           />
-
           <div>
             {isSignUpForm ? (
               <input
@@ -165,7 +165,6 @@ const Login = () => {
               ></input>
             ) : null}
           </div>
-
           <div>
             {isSignUpForm ? (
               <input
@@ -176,7 +175,6 @@ const Login = () => {
               ></input>
             ) : null}
           </div>
-
           <input
             ref={passwordRef}
             type="password"
@@ -184,7 +182,6 @@ const Login = () => {
             placeholder="Password"
             onChange={(e) => setPassword(e.target.value)}
           />
-
           <button
             className="p-2 m-4 mx-auto w-full rounded-lg bg-blue-500 text-white hover:bg-blue-800 hover:text-gray-200"
             type="submit"
@@ -200,6 +197,27 @@ const Login = () => {
               ? "Do not have an account? Sign Up Now"
               : "Already have an account? Sign In Now"}
           </p>
+          {/* <hr className="my-4 w-full border-t-2 border-gray-300">or</hr> */}
+          <p className="my-4 w-full border-t-2 border-gray-300"></p>
+
+          {/* Google Login */}
+          <div className="mx-auto">
+            <GoogleLogin
+              onSuccess={(credentialResponse) => {
+                const credentialResponseDecoded = jwtDecode(
+                  credentialResponse.credential ?? ""
+                );
+                console.log(credentialResponseDecoded);
+                dispatch(
+                  addUser({ username: (credentialResponseDecoded as any).name })
+                );
+                navigate("/home");
+              }}
+              onError={() => {
+                console.log("Login Failed");
+              }}
+            />
+          </div>
         </form>
       </div>
     </div>

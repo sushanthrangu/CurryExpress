@@ -3,11 +3,24 @@ import MenuItem from "./MenuItem";
 import { useSelector } from "react-redux";
 import NavBar from "./Navbar";
 import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const Favorites = () => {
   const menuItems = useSelector((store: any) => store.menu.items).filter(
     (item: any) => item.isFavorite === true
   );
+
+  const navigate = useNavigate();
+  const user = useSelector((store: any) => store.user?.username);
+
+  useEffect(() => {
+    if (user) {
+      //console.log(user);
+    } else {
+      navigate("/");
+    }
+  }, []);
 
   return (
     <div className="flex flex-col min-h-screen justify-between">

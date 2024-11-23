@@ -33,7 +33,7 @@ const Footer = () => {
                   <p className="text-white hover:text-gray-300 mb-2">Git hub</p>
                   <div className="text-center">
                     <SocialIcon
-                      url="https://github.com/rohanvarma29"
+                      url="https://github.com/rohanvarma29/curry-express"
                       target="_blank"
                       style={{ width: 30, height: 30 }}
                     />

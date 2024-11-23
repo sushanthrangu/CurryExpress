@@ -81,7 +81,7 @@ func GetAllUsers(c *fiber.Ctx) error {
 
 // Fetch curry menu
 func GetMenu(c *fiber.Ctx) error {
-	// Retrieve the pizza menu from the database
+	// Retrieve the menu from the database
 	fmt.Println("Inside Get menu route")
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	var userCollection *mongo.Collection = config.GetCollection(config.DB, "menudata")
@@ -275,7 +275,7 @@ func DeleteFromCart(c *fiber.Ctx) error {
 
 // Build api endpoint
 func BuildPizza(c *fiber.Ctx) error {
-	// Build a custom pizza
+	// Build a custom
 	fmt.Println("Inside Build route")
 	var BuilCollection *mongo.Collection = config.GetCollection(config.DB, "cart")
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
@@ -293,7 +293,7 @@ func BuildPizza(c *fiber.Ctx) error {
 		Price:    pizza.Price,
 		Quantity: pizza.Quantity,
 	}
-	// Insert the new pizza into the database
+	// Insert the new curry into the database
 	result, err := BuilCollection.InsertOne(ctx, newPizza)
 	if err != nil {
 		return c.JSON(&fiber.Map{"data": "error in insertion to db"})
