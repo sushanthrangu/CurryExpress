@@ -15,19 +15,19 @@ const NavBar = () => {
   // }
 
   const handleMenuClick = () => {
-    console.log("Menu clicked");
+    //console.log("Menu clicked");
     navigate("/home");
   };
 
   const handleLogout = () => {
-    console.log("Logout clicked");
+    //console.log("Logout clicked");
     dispatch(removeUser());
     navigate("/");
   };
 
   useEffect(() => {
     // Fetch menu items from the backend API
-    console.log("useEffect hook in NavBar is being called");
+    //console.log("useEffect hook in NavBar is being called");
   }, [cartItems]);
 
   return (

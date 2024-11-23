@@ -33,7 +33,7 @@ const Login = () => {
   }, []);
 
   const getMenuItems = async () => {
-    console.log("getMenuItems function is being called");
+    //console.log("getMenuItems function is being called");
     axios
       .get("http://127.0.0.1:5001/getmenu")
       .then((response) => {
@@ -96,12 +96,12 @@ const Login = () => {
       const passwordRefValue = (passwordRef.current as HTMLInputElement).value;
       const emailRefValue = (emailRef.current as HTMLInputElement).value;
       const phoneRefValue = (phoneRef.current as HTMLInputElement).value;
-      console.log(
-        usernameRefValue,
-        passwordRefValue,
-        emailRefValue,
-        phoneRefValue
-      );
+      // console.log(
+      //   usernameRefValue,
+      //   passwordRefValue,
+      //   emailRefValue,
+      //   phoneRefValue
+      // );
       // Sending registration data to the server
       axios
         .post("http://localhost:5001/register", {

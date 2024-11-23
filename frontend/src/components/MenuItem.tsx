@@ -14,7 +14,7 @@ const MenuItem = (props: any) => {
 
   const handleAddToCart = () => {
     const uniqueId = uuidv4();
-    console.log(uniqueId);
+    //console.log(uniqueId);
     dispatch(
       addToCart({
         id: item.id,

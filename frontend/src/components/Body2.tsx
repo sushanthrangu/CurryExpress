@@ -56,7 +56,7 @@ const Body2 = () => {
           </h1>
           <Slider {...settings} className=" w-[90%] mx-auto">
             {menuItems.map((item: any) => (
-              <div className="h-[900px]">
+              <div className="h-[600px]">
                 <MenuItem key={item.id} item={item} />
               </div>
             ))}
