@@ -5,6 +5,7 @@ import { updateFavorites } from "../store/menuSlice";
 import { v4 as uuidv4 } from "uuid";
 import favorite from "../assets/heart.png";
 import save from "../assets/save.png";
+import { ToastContainer, toast } from "react-toastify";
 
 const MenuItem = (props: any) => {
   const { item, favorites } = props;
@@ -23,6 +24,15 @@ const MenuItem = (props: any) => {
         Image: item.Image,
       })
     );
+    toast.success(`${item.name} added to cart!`, {
+      position: "bottom-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
     //console.log("Item added to cart:", item);
   };
 
@@ -69,6 +79,7 @@ const MenuItem = (props: any) => {
         <p className=" m-1 p-1 text-md ">
           ingredients: {item.ingredients.join(", ")}
         </p>
+
         <div className="flex items-center mx-auto">
           <img
             className="m-1 p-1 mx-2 w-9 h-9 cursor-pointer"

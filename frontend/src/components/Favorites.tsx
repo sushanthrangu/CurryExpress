@@ -34,6 +34,11 @@ const Favorites = () => {
         >
           Favorites
         </h1>
+        {menuItems.length === 0 && (
+          <p className="my-16 text-md font-light w-fit  text-gray-600 m-2 mx-auto">
+            No favorites found. Please add some items to your favorites.
+          </p>
+        )}
         <div className="flex flex-wrap justify-center ">
           {menuItems.map((item: any) => (
             <div className="m-2 p-2 h-[700px] w-[350px]">
